@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <img src="./assets/netflix_logo.png" style="width: 100px" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-dark text-white min-vh-100 py-5 px-4">
+        <div class="container" style="max-width: 600px">
+          <h1 class="fw-bold mb-4 text-center">Edit Profile</h1>
+          <hr />
+
+          <!-- Nome -->
+          <div class="row align-items-start mb-4">
+            <!-- Avatar a sinistra -->
+            <div class="col-4 text-center">
+              <img
+                src="./assets/avatar.png"
+                alt="Profile Icon"
+                style="width: 150px; height: 150px"
+              />
+            </div>
+
+            <!-- Input + Dropdown a destra -->
+            <div class="col-8">
+              <input
+                type="text"
+                class="form-label bg-secondary text-white border-0 mb-3"
+                value="Strive Student"
+              />
+              <br /><label class="form-label">Language:</label><br />
+              <select
+                class="form-label bg-dark text-white border border-white mt-2"
+              >
+                <option selected>English</option>
+                <option>Italiano</option>
+                <option>Español</option>
+                <option>Français</option>
+              </select>
+            </div>
+          </div>
+
+          <hr class="border-secondary" />
+
+          <!-- Maturity Settings -->
+          <div class="mb-4">
+            <h5 class="form-label">Maturity Settings:</h5>
+            <br />
+            <p class="mb-1 fw-bold d-inline-block bg-secondary px-2 py-1">
+              ALL MATURITY RATINGS
+            </p>
+            <p class="mb-2 small">
+              Show titles of all maturity ratings for this profile.
+            </p>
+            <button class="btn btn-outline-light btn-sm">EDIT</button>
+          </div>
+
+          <hr />
+
+          <!-- Autoplay Controls -->
+          <div class="mb-4">
+            <h5 class="form-label">Autoplay controls:</h5>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="autoplayNext"
+              />
+              <label class="form-check-label" for="autoplayNext">
+                Autoplay next episode in a series on all devices
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="autoplayPreview"
+              />
+              <label class="form-check-label" for="autoplayPreview">
+                Autoplay previews while browsing on all devices
+              </label>
+            </div>
+          </div>
+
+          <hr class="border-secondary" />
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-light text-dark fw-bold">SAVE</button>
+            <button class="btn btn-outline-light">CANCEL</button>
+            <button class="btn btn-outline-danger">DELETE PROFILE</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
